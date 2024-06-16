@@ -1,0 +1,254 @@
+/* Global styles */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0; /* Example background color */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  margin-bottom: 20px; /* Added margin for separation */
+}
+
+.form h2 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.form input {
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 100%; /* Full width inputs */
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+.form button {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%; /* Full width buttons */
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+.form button:hover {
+  background-color: #45a049;
+}
+
+/* Dashboard styles */
+
+.navbar {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.navbar-toggle {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 3px 0;
+}
+
+.search-box {
+  display: flex;
+}
+
+.search-box input[type="text"] {
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  margin-right: 10px;
+  font-size: 14px;
+  width: 200px; /* Example width for search input */
+}
+
+.search-box button {
+  padding: 8px 12px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.user-email {
+  margin-right: 20px; /* Spacing for user email */
+}
+
+.content {
+  padding: 20px;
+}
+
+.content h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  padding-left: 35%;
+}
+
+.content p {
+  font-size: 16px;
+  padding-left: 37%;
+}
+/*nav bar*/
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+/* Hamburger menu styles */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.menu ul li {
+  margin-right: 20px;
+}
+
+.menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.menu ul li a:hover {
+  text-decoration: underline;
+}
+
+.search-box {
+  margin-left: auto;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .menu {
+    display: none;
+    position: absolute;
+    top: 60px; /* Adjust as needed */
+    left: 0;
+    background-color: #333;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  .menu.active {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu ul li {
+    margin: 10px 0;
+  }
+}
+
+#services {
+  padding: 50px 0;
+  background: #fff;
+  text-align: center;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.service {
+  text-align: left;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-color: black;
+  border-style: solid;
+}
+
+.service i {
+  font-size: 36px;
+  margin-bottom: 10px;
+  display: block;
+  cursor: pointer;
+}
+
+.service h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  cursor: pointer;
+ 
+}
+
+.service p {
+  font-size: 16px;
+  color: #666;
+}
+.service a{
+  text-decoration-style: none;
+  text-decoration: none;
+  color: #333;
+}

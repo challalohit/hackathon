@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="menu-toggle" id="menu-toggle">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <div class="menu">
+      <ul>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="profile.html">Profile</a></li> <!-- Link to profile page -->
+        <li><a href="#">Settings</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+    </div>
+    <div class="search-box">
+      <input type="text" placeholder="Search...">
+      <button>Search</button>
+    </div>
+    <div class="user-email" id="user-email">
+      <!-- Display user's email here -->
+    </div>
+  </nav>
+
+  <div class="content">
+    <h1>User Profile</h1>
+    <div class="profile-details">
+      <p><strong>Email:</strong> <span id="emailDisplay">Loading...</span></p>
+      <p><strong>Name:</strong> <span id="nameDisplay">John Doe</span> 
+        <button id="editNameBtn">Edit</button>
+        <button id="saveNameBtn" style="display:none;">Save</button>
+      </p>
+      <!-- Add more details as needed -->
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
